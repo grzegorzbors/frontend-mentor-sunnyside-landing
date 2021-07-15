@@ -7,6 +7,7 @@
   --dark-moderate-cyan: hsl(168, 34%, 41%);
 
   /* neutral colors */
+  --creamy: rgb(255, 251, 248);
   --very-dark-desaturated-blue: hsl(212, 27%, 19%);
   --very-dark-grayish-blue: hsl(213, 9%, 39%);
   --dark-grayish-blue: hsl(232, 10%, 55%);
@@ -14,7 +15,8 @@
   --white: hsl(0, 0%, 100%);
 }
 
-html {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -22,6 +24,7 @@ html {
 /* general elements styling */
 
 body {
+  font-size: 18px;
   text-align: center;
   margin: 0;
   box-sizing: border-box;
@@ -29,8 +32,13 @@ body {
   font-family: "Barlow", sans-serif;
 }
 
+p {
+  color: var(--dark-grayish-blue);
+}
+
 a {
   text-decoration: none;
+  color: var(--dark-grayish-blue);
 }
 
 ul {
@@ -39,7 +47,24 @@ ul {
 }
 
 section {
+  background-color: var(--creamy);
   padding: 1.5rem;
+}
+
+article {
+}
+
+h2 {
+  font-family: "Fraunces", serif;
+}
+
+.btn-contact {
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  border: 0;
+  padding: 1.2rem 1.7rem;
+  border-radius: 45px;
+  cursor: pointer;
 }
 
 /* container */
@@ -66,6 +91,8 @@ section {
   text-align: left;
 }
 
+/*  */
+
 @media only screen and (max-width: 376px) {
   body {
   }
@@ -79,17 +106,48 @@ section {
     min-height: 450px;
   }
 
+  /* section */
+
+  .section-image {
+    background-position: center center;
+    background-size: cover;
+    max-width: 375px;
+    height: 312px;
+  }
+
+  .egg-img {
+    background-image: url(../images/mobile/image-transform.jpg);
+  }
+
+  /* nav */
+
   nav {
     display: none;
   }
 
   .mobile-nav {
-    margin-top: 1rem;
+    margin-top: 2.5rem;
+    padding: 0.4rem 0rem;
     display: block;
     z-index: 100;
     background-color: var(--white);
-    padding: 1.5rem;
-    color: var(--dark-grayish-blue);
+    position: relative;
+    animation: fadeIn 800ms;
+  }
+
+  .btn-contact {
+    background-color: var(--yellow);
+  }
+
+  .mobile-nav::after {
+    content: "";
+    position: absolute;
+    top: -24px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 24px solid var(--white);
+    border-left: 24px solid transparent;
   }
 
   .mobile-nav li {
@@ -100,9 +158,19 @@ section {
     margin-top: 0.2rem;
     float: right;
     cursor: pointer;
+    opacity: 0.5;
   }
 
   .h1-with-arrow-hidden {
     display: none;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
