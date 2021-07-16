@@ -26,7 +26,6 @@
 body {
   font-size: 18px;
   text-align: center;
-  margin: 0;
   box-sizing: border-box;
   list-style-type: none;
   font-family: "Barlow", sans-serif;
@@ -48,23 +47,26 @@ ul {
 
 section {
   background-color: var(--creamy);
-  padding: 1.5rem;
 }
 
 article {
+  padding: 1.4rem;
 }
 
 h2 {
   font-family: "Fraunces", serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 .btn-contact {
   font-family: "Fraunces", serif;
   text-transform: uppercase;
   border: 0;
-  padding: 1.2rem 1.7rem;
+  padding: 1rem 1.7rem;
   border-radius: 45px;
-  cursor: pointer;
 }
 
 /* container */
@@ -74,6 +76,7 @@ h2 {
 
 /* main section */
 .main {
+  padding: 1.5rem;
 }
 
 .main h1 {
@@ -91,12 +94,53 @@ h2 {
   text-align: left;
 }
 
-/*  */
+/* article */
+
+.about-header,
+.learn-more {
+  color: var(--very-dark-desaturated-blue);
+  font-weight: 900;
+}
+
+/* learn more underline */
+
+.learn-more {
+  display: inline-block;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+.yellow-underline::after {
+  content: "";
+  background-color: var(--yellow);
+  width: 110%;
+  height: 0.5em;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.red-underline::after {
+  content: "";
+  background-color: var(--soft-red);
+  width: 110%;
+  height: 0.5em;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 0.3;
+}
 
 @media only screen and (max-width: 376px) {
-  body {
-  }
-
   /* main */
 
   .main {
@@ -106,7 +150,11 @@ h2 {
     min-height: 450px;
   }
 
-  /* section */
+  .h1-with-arrow-hidden {
+    display: none;
+  }
+
+  /* section general */
 
   .section-image {
     background-position: center center;
@@ -115,8 +163,32 @@ h2 {
     height: 312px;
   }
 
+  .learn-more {
+    margin-bottom: 2rem;
+  }
+
+  /* article  */
+
+  article {
+  }
+
+  .description {
+    margin: 2rem 0;
+    line-height: 1.5;
+  }
+
+  /* about section */
+  .about-header {
+    margin-top: 2rem;
+  }
+
+  /* image backgrounds */
   .egg-img {
     background-image: url(../images/mobile/image-transform.jpg);
+  }
+
+  .red-glass-img {
+    background-image: url(../images/mobile/image-stand-out.jpg);
   }
 
   /* nav */
@@ -127,7 +199,7 @@ h2 {
 
   .mobile-nav {
     margin-top: 2.5rem;
-    padding: 0.4rem 0rem;
+    padding: 1.5rem 0rem;
     display: block;
     z-index: 100;
     background-color: var(--white);
@@ -151,7 +223,7 @@ h2 {
   }
 
   .mobile-nav li {
-    padding: 1rem;
+    padding: 0.8rem;
   }
 
   .hamburger {
@@ -159,10 +231,6 @@ h2 {
     float: right;
     cursor: pointer;
     opacity: 0.5;
-  }
-
-  .h1-with-arrow-hidden {
-    display: none;
   }
 }
 
