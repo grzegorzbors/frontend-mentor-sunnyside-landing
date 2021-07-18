@@ -69,11 +69,6 @@ button {
   border-radius: 45px;
 }
 
-/* container */
-
-.container {
-}
-
 /* main section */
 .main {
   padding: 1.5rem;
@@ -97,6 +92,7 @@ button {
 /* article */
 
 .about-header,
+.service-header,
 .learn-more {
   color: var(--very-dark-desaturated-blue);
   font-weight: 900;
@@ -169,9 +165,6 @@ button {
 
   /* article  */
 
-  article {
-  }
-
   .description {
     margin: 2rem 0;
     line-height: 1.5;
@@ -182,6 +175,24 @@ button {
     margin-top: 2rem;
   }
 
+  /* services section */
+  .service {
+    min-height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .graphic-design-color {
+    color: var(--dark-desaturated-cyan);
+  }
+
+  .photography-color {
+    color: var(--dark-blue);
+  }
+
   /* image backgrounds */
   .egg-img {
     background-image: url(../images/mobile/image-transform.jpg);
@@ -189,6 +200,14 @@ button {
 
   .red-glass-img {
     background-image: url(../images/mobile/image-stand-out.jpg);
+  }
+
+  .cherries-img {
+    background-image: url(../images/mobile/image-graphic-design.jpg);
+  }
+
+  .orange-img {
+    background-image: url(../images/mobile/image-photography.jpg);
   }
 
   /* nav */
@@ -233,6 +252,8 @@ button {
     opacity: 0.5;
   }
 }
+
+/* animations */
 
 @keyframes fadeIn {
   from {
