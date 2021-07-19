@@ -70,11 +70,11 @@ button {
 }
 
 /* main section */
-.main {
+#main {
   padding: 1.5rem;
 }
 
-.main h1 {
+#main h1 {
   color: var(--white);
   font-family: "Fraunces", serif;
   font-weight: 900;
@@ -82,10 +82,12 @@ button {
   letter-spacing: 0.3rem;
   text-transform: uppercase;
   color: var(--white);
-  padding: 2rem 0 3rem 0;
+  /* padding-top: 2rem; */
+  margin-top: 4rem;
+  margin-bottom: 1.8rem;
 }
 
-.main .logo {
+#main .logo {
   text-align: left;
 }
 
@@ -136,10 +138,49 @@ button {
   opacity: 0.3;
 }
 
+/* testimonials section */
+
+#testimonials {
+  margin: 3.5rem 0;
+}
+
+.testimonials-header {
+  color: var(--grayish-blue);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+#testimonials img {
+  border-radius: 50%;
+  max-height: 72px;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+#testimonials .testimonial-text {
+  color: var(--very-dark-grayish-blue);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+#testimonials .person-name {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: var(--very-dark-desaturated-blue);
+  padding: 1rem;
+}
+
+#testimonials .person-title {
+  color: var(--grayish-blue);
+}
+
 @media only screen and (max-width: 376px) {
   /* main */
 
-  .main {
+  #main {
     background-image: url(../images/mobile/image-header.jpg);
     background-position: center center;
     background-size: cover;
@@ -192,6 +233,8 @@ button {
   .photography-color {
     color: var(--dark-blue);
   }
+
+  /* testimonials section */
 
   /* image backgrounds */
   .egg-img {
