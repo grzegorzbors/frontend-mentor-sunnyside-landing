@@ -1,5 +1,6 @@
 :root {
   /* primary colors */
+
   --soft-red: hsl(7, 99%, 70%);
   --yellow: hsl(51, 100%, 49%);
   --dark-desaturated-cyan: hsl(167, 40%, 24%);
@@ -7,6 +8,7 @@
   --dark-moderate-cyan: hsl(168, 34%, 41%);
 
   /* neutral colors */
+
   --creamy: rgb(255, 251, 248);
   --very-dark-desaturated-blue: hsl(212, 27%, 19%);
   --very-dark-grayish-blue: hsl(213, 9%, 39%);
@@ -14,6 +16,8 @@
   --grayish-blue: hsl(210, 4%, 67%);
   --white: hsl(0, 0%, 100%);
 }
+
+/* reset */
 
 * {
   box-sizing: border-box;
@@ -82,7 +86,6 @@ button {
   letter-spacing: 0.3rem;
   text-transform: uppercase;
   color: var(--white);
-  /* padding-top: 2rem; */
   margin-top: 4rem;
   margin-bottom: 1.8rem;
 }
@@ -141,7 +144,7 @@ button {
 /* testimonials section */
 
 #testimonials {
-  margin: 3.5rem 0;
+  padding: 3.5rem 0 5rem 0;
 }
 
 .testimonials-header {
@@ -212,11 +215,13 @@ button {
   }
 
   /* about section */
+
   .about-header {
     margin-top: 2rem;
   }
 
   /* services section */
+
   .service {
     min-height: 600px;
     background-size: cover;
@@ -234,9 +239,28 @@ button {
     color: var(--dark-blue);
   }
 
-  /* testimonials section */
+  /* images section */
+
+  #images {
+    height: 376px;
+  }
+
+  #images .img-column {
+    display: flex;
+    height: 50%;
+    width: 100%;
+  }
+
+  #images .image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+  }
 
   /* image backgrounds */
+
   .egg-img {
     background-image: url(../images/mobile/image-transform.jpg);
   }
@@ -251,6 +275,22 @@ button {
 
   .orange-img {
     background-image: url(../images/mobile/image-photography.jpg);
+  }
+
+  .milkbottles-img {
+    background-image: url(../images/mobile/image-gallery-milkbottles.jpg);
+  }
+
+  .orange-on-a-plate-img {
+    background-image: url(../images/mobile/image-gallery-orange.jpg);
+  }
+
+  .cone-img {
+    background-image: url(../images/mobile/image-gallery-cone.jpg);
+  }
+
+  .sugarcubes-img {
+    background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
   }
 
   /* nav */
