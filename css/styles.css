@@ -6,6 +6,7 @@
   --dark-desaturated-cyan: hsl(167, 40%, 24%);
   --dark-blue: hsl(198, 62%, 26%);
   --dark-moderate-cyan: hsl(168, 34%, 41%);
+  --light-cyan: hsl(167, 44%, 70%);
 
   /* neutral colors */
 
@@ -180,6 +181,36 @@ button {
   color: var(--grayish-blue);
 }
 
+/* footer */
+footer {
+  padding: 2.5rem 0;
+  background-color: var(--light-cyan);
+}
+
+footer a {
+  color: var(--dark-moderate-cyan);
+}
+
+footer > .logo {
+  padding: 1.4rem 0 2.5rem 0;
+}
+
+footer > .logo > img {
+  transform: scale(150%);
+}
+
+footer .footer-links a:not(:last-child) {
+  margin-right: 3rem;
+}
+
+footer .social {
+  padding: 5.5rem 0 1.4rem 0;
+}
+
+footer .social a:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
 @media only screen and (max-width: 376px) {
   /* main */
 
@@ -332,6 +363,9 @@ button {
     margin-top: 0.2rem;
     float: right;
     cursor: pointer;
+  }
+
+  .hamburger-opaque {
     opacity: 0.5;
   }
 }
