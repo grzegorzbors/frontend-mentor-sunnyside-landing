@@ -42,7 +42,6 @@ p {
 
 a {
   text-decoration: none;
-  color: var(--dark-grayish-blue);
 }
 
 ul {
@@ -72,11 +71,27 @@ button {
   border: 0;
   padding: 1rem 1.7rem;
   border-radius: 45px;
+  background-color: transparent;
+  color: var(--very-dark-desaturated-blue);
+}
+
+/* default hidden hamburger on desktop */
+.hamburger {
+  display: none;
 }
 
 /* main section */
 #main {
-  padding: 1.5rem;
+  padding: 2rem;
+  padding-top: 1.5rem;
+  background-image: url(../images/desktop/image-header.jpg);
+  background-position: center center;
+  background-size: cover;
+  min-height: 600px;
+}
+
+#main header {
+  display: flex;
 }
 
 #main h1 {
@@ -84,11 +99,32 @@ button {
   font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 2rem;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.5rem;
   text-transform: uppercase;
   color: var(--white);
   margin-top: 4rem;
-  margin-bottom: 1.8rem;
+  margin-bottom: 4.5rem;
+}
+
+/* nav */
+
+#main nav {
+  margin-left: auto;
+}
+
+#main ul {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: var(--white);
+}
+
+/* not last child because the margin doesn't need to be applied to button that's in li */
+
+nav li:not(:last-child) {
+  margin-right: 3rem;
 }
 
 #main .logo {
@@ -191,11 +227,11 @@ footer a {
   color: var(--dark-moderate-cyan);
 }
 
-footer > .logo {
+footer > .logo-footer {
   padding: 1.4rem 0 2.5rem 0;
 }
 
-footer > .logo > img {
+footer > .logo-footer > img {
   transform: scale(150%);
 }
 
@@ -211,14 +247,37 @@ footer .social a:not(:last-child) {
   margin-right: 1.5rem;
 }
 
-@media only screen and (max-width: 376px) {
+/* mobile media */
+
+@media only screen and (max-width: 375.5px) {
   /* main */
 
   #main {
+    padding: 1.5rem;
     background-image: url(../images/mobile/image-header.jpg);
     background-position: center center;
     background-size: cover;
     min-height: 450px;
+  }
+
+  #main h1 {
+    margin-bottom: 1.8rem;
+  }
+
+  #main header {
+    display: block;
+  }
+
+  #main ul {
+    display: block;
+  }
+
+  #main nav li {
+    margin-right: auto;
+  }
+
+  nav a {
+    color: var(--dark-grayish-blue);
   }
 
   .h1-with-arrow-hidden {
@@ -360,6 +419,7 @@ footer .social a:not(:last-child) {
   }
 
   .hamburger {
+    display: block;
     margin-top: 0.2rem;
     float: right;
     cursor: pointer;
@@ -378,5 +438,47 @@ footer .social a:not(:last-child) {
   }
   to {
     opacity: 1;
+  }
+}
+
+/* desktop media */
+@media screen and (min-width: 376px) {
+  /* button hover */
+  nav .btn-contact {
+    transition: all 300ms ease-in-out;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+  }
+
+  nav .btn-contact::after {
+    background-color: var(--white);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all 300ms ease-in-out;
+  }
+
+  nav .btn-contact:hover::after {
+    opacity: 0.4;
+  }
+  nav .btn-contact:hover {
+    color: var(--white);
+  }
+
+  /* logo */
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-image {
+    max-width: 124px;
+    max-height: 24px;
   }
 }
