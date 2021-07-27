@@ -29,15 +29,13 @@
 /* general elements styling */
 
 body {
+  max-width: 1440px;
+  margin: 0 auto;
   font-size: 18px;
   text-align: center;
   box-sizing: border-box;
   list-style-type: none;
   font-family: "Barlow", sans-serif;
-}
-
-p {
-  color: var(--dark-grayish-blue);
 }
 
 a {
@@ -55,10 +53,12 @@ section {
 
 h2 {
   font-family: "Fraunces", serif;
+  font-size: 2rem;
 }
 
 button {
   cursor: pointer;
+  font-weight: 900;
 }
 
 .btn-contact {
@@ -70,6 +70,8 @@ button {
   background-color: transparent;
   color: var(--very-dark-desaturated-blue);
 }
+
+/* font color classes */
 
 .graphic-design-color {
   color: var(--dark-desaturated-cyan);
@@ -83,9 +85,24 @@ button {
   color: var(--dark-moderate-cyan);
 }
 
+.footer-links a {
+  color: var(--dark-moderate-cyan);
+}
+
+.learn-more,
+.about-header {
+  color: var(--very-dark-desaturated-blue);
+}
+
 /* default hidden hamburger on desktop */
 .hamburger {
   display: none;
+}
+
+/* section specific elements */
+
+.learn-more {
+  font-size: 1rem;
 }
 
 /* main section */
@@ -117,11 +134,11 @@ button {
 
 /* nav */
 
-#main nav {
+nav {
   margin-left: auto;
 }
 
-#main ul {
+nav ul {
   display: flex;
   align-items: center;
 }
@@ -148,12 +165,19 @@ nav li:not(:last-child) {
   font-weight: 900;
 }
 
-.learn-more,
-.about-header {
-  color: var(--very-dark-desaturated-blue);
+.background-cover {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* learn more underline */
+
+/* about section general */
+
+#about p {
+  color: var(--dark-grayish-blue);
+}
 
 .learn-more {
   display: inline-block;
@@ -193,25 +217,18 @@ nav li:not(:last-child) {
   transition: all 300ms ease-in-out;
 }
 
-/* testimonials section */
-
-#testimonials {
-  padding: 3.5rem 0 5rem 0;
-}
-
 .testimonials-header {
   color: var(--grayish-blue);
   text-transform: uppercase;
   font-weight: 900;
   font-size: 1rem;
   letter-spacing: 0.2rem;
-  margin-bottom: 1rem;
 }
 
 #testimonials img {
   border-radius: 50%;
   max-height: 72px;
-  margin-top: 1rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
 }
 
@@ -234,12 +251,17 @@ nav li:not(:last-child) {
 
 /* footer */
 footer {
-  padding: 2.5rem 2rem;
+  padding: 3rem 2rem;
   background-color: var(--light-cyan);
 }
 
-footer a {
-  color: var(--dark-moderate-cyan);
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links a {
+  display: block;
 }
 
 footer > .logo-footer {
@@ -250,371 +272,10 @@ footer > .logo-footer > img {
   transform: scale(150%);
 }
 
-footer .footer-links a:not(:last-child) {
-  margin-right: 3rem;
-}
-
 footer .social {
   padding: 5.5rem 0 1.4rem 0;
 }
 
 footer .social a:not(:last-child) {
   margin-right: 1.5rem;
-}
-
-/* mobile media */
-
-@media only screen and (max-width: 375.5px) {
-  /* main */
-
-  #main {
-    padding: 1.5rem;
-    background-image: url(../images/mobile/image-header.jpg);
-    background-position: center center;
-    background-size: cover;
-    min-height: 450px;
-  }
-
-  #main h1 {
-    margin-bottom: 1.8rem;
-  }
-
-  .h1-with-arrow-hidden {
-    display: none;
-  }
-
-  #main header {
-    display: block;
-  }
-
-  /* nav */
-
-  nav {
-    display: none;
-  }
-
-  .mobile-nav {
-    margin-top: 2.5rem;
-    padding: 1.5rem 0rem;
-    display: block;
-    z-index: 100;
-    background-color: var(--white);
-    position: relative;
-    animation: fadeIn 800ms;
-  }
-
-  .btn-contact {
-    background-color: var(--yellow);
-  }
-
-  .mobile-nav::after {
-    content: "";
-    position: absolute;
-    top: -24px;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-bottom: 24px solid var(--white);
-    border-left: 24px solid transparent;
-  }
-
-  .mobile-nav li {
-    padding: 0.8rem;
-  }
-
-  .hamburger {
-    display: block;
-    margin-top: 0.2rem;
-    float: right;
-    cursor: pointer;
-  }
-
-  .hamburger-opaque {
-    opacity: 0.5;
-  }
-
-  #main ul {
-    display: block;
-  }
-
-  #main nav li {
-    margin-right: auto;
-  }
-
-  nav a {
-    color: var(--dark-grayish-blue);
-  }
-
-  /* section general */
-
-  .section-image {
-    background-position: center center;
-    background-size: cover;
-    max-width: 375px;
-    height: 312px;
-  }
-
-  /* about */
-  #about .article-wrapper {
-    padding: 4rem 1.5rem;
-  }
-
-  /* article  */
-
-  .description {
-    margin: 2rem 0;
-    line-height: 1.5;
-  }
-
-  /* services section */
-
-  .service {
-    min-height: 600px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-
-  /* images section */
-
-  #images {
-    height: 376px;
-  }
-
-  #images .img-column {
-    display: flex;
-    height: 50%;
-    width: 100%;
-  }
-
-  #images .image {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50%;
-    height: 100%;
-  }
-
-  /* image backgrounds */
-
-  .egg-img {
-    background-image: url(../images/mobile/image-transform.jpg);
-  }
-
-  .red-glass-img {
-    background-image: url(../images/mobile/image-stand-out.jpg);
-  }
-
-  .cherries-img {
-    background-image: url(../images/mobile/image-graphic-design.jpg);
-  }
-
-  .orange-img {
-    background-image: url(../images/mobile/image-photography.jpg);
-  }
-
-  .milkbottles-img {
-    background-image: url(../images/mobile/image-gallery-milkbottles.jpg);
-  }
-
-  .orange-on-a-plate-img {
-    background-image: url(../images/mobile/image-gallery-orange.jpg);
-  }
-
-  .cone-img {
-    background-image: url(../images/mobile/image-gallery-cone.jpg);
-  }
-
-  .sugarcubes-img {
-    background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
-  }
-}
-
-/* animations */
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* desktop media */
-@media screen and (min-width: 376px) {
-  body {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-  /* general */
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  article .description {
-    margin: 2rem 0;
-    line-height: 1.5;
-  }
-
-  .description {
-    font-size: 1rem;
-  }
-
-  .learn-more {
-    font-size: 1rem;
-  }
-
-  /* button hover */
-  nav .btn-contact {
-    transition: all 300ms ease-in-out;
-    position: relative;
-    z-index: 10;
-    overflow: hidden;
-  }
-
-  nav .btn-contact::after {
-    background-color: var(--white);
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    transition: all 300ms ease-in-out;
-  }
-
-  nav .btn-contact:hover::after {
-    opacity: 0.4;
-  }
-  nav .btn-contact:hover {
-    color: var(--white);
-  }
-
-  /* logo */
-
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-
-  .logo-image {
-    max-width: 124px;
-    max-height: 24px;
-  }
-
-  /* about section */
-
-  #about {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-
-  #about article {
-    display: flex;
-    padding: 0;
-    max-height: 500px;
-    min-height: 500px;
-  }
-
-  .about-header {
-    font-size: 2rem;
-    font-weight: 900;
-  }
-
-  #about .article-wrapper {
-    width: 50%;
-    padding: 7rem 6rem;
-    text-align: left;
-  }
-
-  .reversed-item {
-    flex-direction: row-reverse;
-  }
-
-  .section-image {
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 50%;
-  }
-
-  .yellow-underline:hover::after {
-    opacity: 1;
-  }
-
-  .red-underline:hover::after {
-    opacity: 1;
-  }
-
-  /* services section */
-
-  #services {
-    display: flex;
-    height: 50%;
-  }
-
-  #services article {
-    max-height: 500px;
-    min-height: 500px;
-  }
-
-  .service {
-    width: 50%;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: flex-end;
-  }
-
-  .service-header {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  #services .article-wrapper {
-    width: 50%;
-    margin: 0 auto;
-    padding-bottom: 1.5rem;
-  }
-
-  /* images */
-
-  .egg-img {
-    background-image: url(../images/desktop/image-transform.jpg);
-  }
-
-  .red-glass-img {
-    background-image: url(../images/desktop/image-stand-out.jpg);
-  }
-
-  .cherries-img {
-    background-image: url(../images/desktop/image-graphic-design.jpg);
-  }
-
-  .orange-img {
-    background-image: url(../images/desktop/image-photography.jpg);
-  }
-
-  .milkbottles-img {
-    background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
-  }
-
-  .orange-on-a-plate-img {
-    background-image: url(../images/desktop/image-gallery-orange.jpg);
-  }
-
-  .cone-img {
-    background-image: url(../images/desktop/image-gallery-cone.jpg);
-  }
-
-  .sugarcubes-img {
-    background-image: url(../images/desktop/image-gallery-sugar-cubes.jpg);
-  }
 }

@@ -15,10 +15,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/styles-mobile.css" />
+    <link rel="stylesheet" href="/css/styles-desktop.css" />
     <title>Frontend Mentor | Sunnyside agency landing page</title>
   </head>
   <body>
-    <section id="main">
+    <section id="main" class="background-cover">
       <header>
         <div class="logo">
           <img class="logo-image" src="./images/logo.svg" alt="agency logo" />
@@ -68,17 +70,17 @@
         </article>
       </section>
       <section id="services">
-        <article class="service cherries-img">
+        <article class="service background-cover cherries-img">
           <div class="article-wrapper">
             <h2 class="graphic-design-color service-header">Graphic design</h2>
-            <p class="description graphic-design-description-color">
+            <p class="description graphic-design-color">
               Great design makes you memorable. We deliver artwork that
               underscores your brand message and captures potential clients’
               attention.
             </p>
           </div>
         </article>
-        <article class="service orange-img">
+        <article class="service background-cover orange-img">
           <div class="article-wrapper">
             <h2 class="photography-color service-header">Photography</h2>
             <p class="description photography-color">
@@ -92,47 +94,41 @@
     <section id="testimonials">
       <h2 class="testimonials-header">Client Testimonials</h2>
       <article>
-        <div class="article-wrapper">
-          <img src="./images/image-emily.jpg" alt="Emily" />
-          <p class="testimonial-text">
-            We put our trust in Sunnyside and they delivered, making sure our
-            needs were met and deadlines were always hit.
-          </p>
-          <h3 class="person-name">Emily R.</h3>
-          <p class="person-title">Marketing Director</p>
-        </div>
+        <img src="./images/image-emily.jpg" alt="Emily" />
+        <p class="testimonial-text">
+          We put our trust in Sunnyside and they delivered, making sure our
+          needs were met and deadlines were always hit.
+        </p>
+        <h3 class="person-name">Emily R.</h3>
+        <p class="person-title">Marketing Director</p>
       </article>
       <article>
-        <div class="article-wrapper">
-          <img src="./images/image-thomas.jpg" alt="Thomas" />
-          <p class="testimonial-text">
-            Sunnyside’s enthusiasm coupled with their keen interest in our
-            brand’s success made it a satisfying and enjoyable experience.
-          </p>
-          <h3 class="person-name">Thomas S.</h3>
-          <p class="person-title">Chief Operating Officer</p>
-        </div>
+        <img src="./images/image-thomas.jpg" alt="Thomas" />
+        <p class="testimonial-text">
+          Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
+          success made it a satisfying and enjoyable experience.
+        </p>
+        <h3 class="person-name">Thomas S.</h3>
+        <p class="person-title">Chief Operating Officer</p>
       </article>
       <article>
-        <div class="article-wrapper">
-          <img src="./images/image-jennie.jpg" alt="Jennie" />
-          <p class="testimonial-text">
-            Incredible end result! Our sales increased over 400% when we worked
-            with Sunnyside. Highly recommended!
-          </p>
-          <h3 class="person-name">Jennie F.</h3>
-          <p class="person-title">Business Owner</p>
-        </div>
+        <img src="./images/image-jennie.jpg" alt="Jennie" />
+        <p class="testimonial-text">
+          Incredible end result! Our sales increased over 400% when we worked
+          with Sunnyside. Highly recommended!
+        </p>
+        <h3 class="person-name">Jennie F.</h3>
+        <p class="person-title">Business Owner</p>
       </article>
     </section>
     <section id="images">
       <div class="img-column">
-        <div class="milkbottles-img image"></div>
-        <div class="orange-on-a-plate-img image"></div>
+        <div class="milkbottles-img image background-cover"></div>
+        <div class="orange-on-a-plate-img image background-cover"></div>
       </div>
       <div class="img-column">
-        <div class="cone-img image"></div>
-        <div class="sugarcubes-img image"></div>
+        <div class="cone-img image background-cover"></div>
+        <div class="sugarcubes-img image background-cover"></div>
       </div>
     </section>
     <footer>
