@@ -124,7 +124,7 @@ button {
   color: var(--white);
   font-family: "Fraunces", serif;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 2.5rem;
   letter-spacing: 0.5rem;
   text-transform: uppercase;
   color: var(--white);
@@ -222,7 +222,7 @@ nav li:not(:last-child) {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 1rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.3rem;
 }
 
 #testimonials img {
@@ -247,6 +247,7 @@ nav li:not(:last-child) {
 
 #testimonials .person-title {
   color: var(--grayish-blue);
+  font-size: 1rem;
 }
 
 /* footer */

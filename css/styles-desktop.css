@@ -1,18 +1,21 @@
 @media screen and (min-width: 376px) {
   /* general */
-  .wrapper {
+  .wrapper-flex-column {
     display: flex;
     flex-direction: column;
+  }
+
+  .wrapper-flex {
+    display: flex;
   }
 
   article .description {
     margin: 2rem 0;
     line-height: 1.5;
-  }
-
-  .description {
     font-size: 1rem;
   }
+
+  /* main */
 
   /* button hover */
   nav .btn-contact {
@@ -117,6 +120,8 @@
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .service-header {
@@ -125,15 +130,36 @@
   }
 
   #services .article-wrapper {
-    width: 50%;
+    height: 35%;
     margin: 0 auto;
-    padding: 1.5rem;
+  }
+
+  #services .description {
+    margin: 0;
   }
 
   /* testimonials */
 
-  #testimonials .article-wrapper {
-    padding: 7rem 6rem;
+  #testimonials {
+    padding: 8rem 6rem 12rem 6rem;
+  }
+
+  #testimonials article {
+    padding: 1rem;
+  }
+
+  #testimonials img {
+    margin-bottom: 3rem;
+  }
+
+  #testimonials .testimonial-text {
+    margin: 0;
+    min-height: 42%;
+    line-height: 1.5;
+  }
+
+  #testimonials .person-name {
+    margin-top: 0;
   }
 
   /* images */
