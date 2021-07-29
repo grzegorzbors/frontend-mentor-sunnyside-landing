@@ -109,7 +109,7 @@ button {
 #main {
   padding: 2rem;
   padding-top: 1.5rem;
-  background-image: url(../images/desktop/image-header.jpg);
+  background-image: url(/images/desktop/image-header.jpg);
   min-height: 600px;
 }
 

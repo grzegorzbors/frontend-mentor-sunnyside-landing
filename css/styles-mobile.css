@@ -8,7 +8,7 @@
 
   #main {
     padding: 1.5rem;
-    background-image: url(../images/mobile/image-header.jpg);
+    background-image: url(/images/mobile/image-header.jpg);
     min-height: 450px;
   }
 
@@ -145,35 +145,35 @@
   /* backgrounds */
 
   .egg-img {
-    background-image: url(../images/mobile/image-transform.jpg);
+    background-image: url(/images/mobile/image-transform.jpg);
   }
 
   .red-glass-img {
-    background-image: url(../images/mobile/image-stand-out.jpg);
+    background-image: url(/images/mobile/image-stand-out.jpg);
   }
 
   .cherries-img {
-    background-image: url(../images/mobile/image-graphic-design.jpg);
+    background-image: url(/images/mobile/image-graphic-design.jpg);
   }
 
   .orange-img {
-    background-image: url(../images/mobile/image-photography.jpg);
+    background-image: url(/images/mobile/image-photography.jpg);
   }
 
   .milkbottles-img {
-    background-image: url(../images/mobile/image-gallery-milkbottles.jpg);
+    background-image: url(/images/mobile/image-gallery-milkbottles.jpg);
   }
 
   .orange-on-a-plate-img {
-    background-image: url(../images/mobile/image-gallery-orange.jpg);
+    background-image: url(/images/mobile/image-gallery-orange.jpg);
   }
 
   .cone-img {
-    background-image: url(../images/mobile/image-gallery-cone.jpg);
+    background-image: url(/images/mobile/image-gallery-cone.jpg);
   }
 
   .sugarcubes-img {
-    background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
+    background-image: url(/images/mobile/image-gallery-sugar-cubes.jpg);
   }
 }
 

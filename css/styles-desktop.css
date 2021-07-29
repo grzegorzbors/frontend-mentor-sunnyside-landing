@@ -189,34 +189,34 @@
   /* backgrounds */
 
   .egg-img {
-    background-image: url(../images/desktop/image-transform.jpg);
+    background-image: url(/images/desktop/image-transform.jpg);
   }
 
   .red-glass-img {
-    background-image: url(../images/desktop/image-stand-out.jpg);
+    background-image: url(/images/desktop/image-stand-out.jpg);
   }
 
   .cherries-img {
-    background-image: url(../images/desktop/image-graphic-design.jpg);
+    background-image: url(/images/desktop/image-graphic-design.jpg);
   }
 
   .orange-img {
-    background-image: url(../images/desktop/image-photography.jpg);
+    background-image: url(/images/desktop/image-photography.jpg);
   }
 
   .milkbottles-img {
-    background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
+    background-image: url(/images/desktop/image-gallery-milkbottles.jpg);
   }
 
   .orange-on-a-plate-img {
-    background-image: url(../images/desktop/image-gallery-orange.jpg);
+    background-image: url(/images/desktop/image-gallery-orange.jpg);
   }
 
   .cone-img {
-    background-image: url(../images/desktop/image-gallery-cone.jpg);
+    background-image: url(/images/desktop/image-gallery-cone.jpg);
   }
 
   .sugarcubes-img {
-    background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
+    background-image: url(/images/desktop/image-gallery-sugarcubes.jpg);
   }
 }
