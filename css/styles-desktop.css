@@ -162,7 +162,31 @@
     margin-top: 0;
   }
 
-  /* images */
+  /* footer */
+  .footer-links {
+    margin: 0 auto;
+    width: 45%;
+  }
+
+  /* images section */
+
+  #images {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #images .img-column {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 376px;
+  }
+
+  #images .image {
+    width: 100%;
+  }
+
+  /* backgrounds */
 
   .egg-img {
     background-image: url(../images/desktop/image-transform.jpg);
@@ -193,6 +217,6 @@
   }
 
   .sugarcubes-img {
-    background-image: url(../images/desktop/image-gallery-sugar-cubes.jpg);
+    background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
   }
 }

@@ -110,9 +110,6 @@ button {
   padding: 2rem;
   padding-top: 1.5rem;
   background-image: url(../images/desktop/image-header.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
   min-height: 600px;
 }
 
@@ -170,8 +167,6 @@ nav li:not(:last-child) {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-/* learn more underline */
 
 /* about section general */
 
@@ -258,18 +253,24 @@ footer {
 
 .footer-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .footer-links a {
   display: block;
+  transition: all 300ms ease-in-out;
 }
 
-footer > .logo-footer {
+.footer-links a:hover,
+.social-icon:hover {
+  color: var(--white);
+}
+
+footer .logo-footer {
   padding: 1.4rem 0 2.5rem 0;
 }
 
-footer > .logo-footer > img {
+footer .logo-footer img {
   transform: scale(150%);
 }
 
@@ -277,6 +278,19 @@ footer .social {
   padding: 5.5rem 0 1.4rem 0;
 }
 
+.social a img {
+  fill: hsl(168, 45%, 32%);
+}
+
 footer .social a:not(:last-child) {
   margin-right: 1.5rem;
+}
+
+.social-icon {
+  fill: hsl(168, 45%, 32%);
+  transition: all 300ms ease-in-out;
+}
+
+.social-icon:hover {
+  fill: var(--white);
 }
