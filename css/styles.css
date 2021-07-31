@@ -100,9 +100,21 @@ button {
 }
 
 /* section specific elements */
-
 .learn-more {
   font-size: 1rem;
+}
+
+.about-header,
+.service-header,
+.learn-more {
+  font-weight: 900;
+}
+
+/* helpers */
+.background-cover {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* main section */
@@ -154,21 +166,7 @@ nav li:not(:last-child) {
   text-align: left;
 }
 
-/* article */
-
-.about-header,
-.service-header,
-.learn-more {
-  font-weight: 900;
-}
-
-.background-cover {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-/* about section general */
+/* about section */
 
 #about p {
   color: var(--dark-grayish-blue);
@@ -210,6 +208,14 @@ nav li:not(:last-child) {
   z-index: -1;
   opacity: 0.3;
   transition: all 300ms ease-in-out;
+}
+
+.yellow-underline:hover::after {
+  opacity: 1;
+}
+
+.red-underline:hover::after {
+  opacity: 1;
 }
 
 .testimonials-header {

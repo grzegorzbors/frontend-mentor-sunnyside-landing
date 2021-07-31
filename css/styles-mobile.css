@@ -1,4 +1,4 @@
-@media only screen and (max-width: 375.5px) {
+@media only screen and (max-width: 768.5px) {
   /* general */
 
   h2 {
@@ -74,6 +74,7 @@
     margin-top: 0.2rem;
     float: right;
     cursor: pointer;
+    transition: all 300ms ease-in-out;
   }
 
   .hamburger-opaque {
@@ -87,9 +88,6 @@
   /* section general */
 
   .section-image {
-    background-position: center center;
-    background-size: cover;
-    max-width: 375px;
     height: 312px;
   }
 
@@ -108,7 +106,7 @@
   /* services section */
 
   .service {
-    min-height: 600px;
+    min-height: 482px;
     padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
@@ -185,5 +183,27 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+  #about {
+    display: flex;
+  }
+
+  #services {
+    display: flex;
+  }
+
+  #testimonials .wrapper-flex {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #main h1 {
+    margin-bottom: 1.8rem;
+    font-size: 1.5rem;
   }
 }

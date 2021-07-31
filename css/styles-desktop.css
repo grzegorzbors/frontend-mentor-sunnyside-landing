@@ -1,4 +1,4 @@
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 768.5px) {
   /* general */
   .wrapper-flex-column {
     display: flex;
@@ -67,8 +67,7 @@
   #about article {
     display: flex;
     padding: 0;
-    max-height: 500px;
-    min-height: 500px;
+    height: 500px;
   }
 
   .about-header {
@@ -87,18 +86,7 @@
   }
 
   .section-image {
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 50%;
-  }
-
-  .yellow-underline:hover::after {
-    opacity: 1;
-  }
-
-  .red-underline:hover::after {
-    opacity: 1;
   }
 
   /* services section */
@@ -109,15 +97,11 @@
   }
 
   #services article {
-    max-height: 500px;
-    min-height: 500px;
+    height: 500px;
   }
 
   .service {
     width: 50%;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
     padding-left: 6rem;
@@ -211,12 +195,21 @@
   .orange-on-a-plate-img {
     background-image: url(/images/desktop/image-gallery-orange.jpg);
   }
-
   .cone-img {
     background-image: url(/images/desktop/image-gallery-cone.jpg);
   }
 
   .sugarcubes-img {
     background-image: url(/images/desktop/image-gallery-sugarcubes.jpg);
+  }
+}
+
+@media screen and (min-width: 768.5px) and (max-width: 992px) {
+  #about .article-wrapper {
+    padding: 5rem 4rem;
+  }
+
+  .service {
+    padding: 0 2rem;
   }
 }
