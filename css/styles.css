@@ -26,6 +26,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* general elements styling */
 
 body {
@@ -216,6 +220,11 @@ nav li:not(:last-child) {
 
 .red-underline:hover::after {
   opacity: 1;
+}
+
+/* testimonials */
+#testimonials {
+  padding: 6rem 1.5rem;
 }
 
 .testimonials-header {
